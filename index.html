@@ -15,22 +15,33 @@
         <form method="GET">
           <div class="container-input">
             <label for="name">Nome</label>
-
-            <input id="name" type="name" name="name" required />
+            <input id="name" type="text" name="name" />
           </div>
           <div class="container-input">
             <label for="email">E-mail</label>
-
-            <input id="email" type="email" name="email" required />
+            <input
+              class="required"
+              data-error-required="Preencha o campo da senha"
+              id="email"
+              type="email"
+              name="email"
+            />
+            <!-- <span class="message-error"></span> -->
           </div>
 
           <div class="container-input">
             <label for="password">Senha</label>
-            <input id="password" type="password" name="password" required />
+            <input
+              class="required"
+              data-error-required="Preencha o campo da senha"
+              id="password"
+              type="password"
+              name="password"
+            />
           </div>
           <div class="container-input">
             <label for="password">Confirmar senha</label>
-            <input id="password" type="password" name="password" required />
+            <input id="password-confirmation" type="password" name="password" />
           </div>
           <br />
           <input type="submit" value="Cadastrar" />
@@ -38,5 +49,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
